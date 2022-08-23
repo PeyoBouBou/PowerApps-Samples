@@ -66,6 +66,13 @@ namespace PowerApps.Samples
                     }
                     catch (MsalUiRequiredException)
                     {
+                        // You will get the following error if your UserPrincipalName or Password in appsettings.config is incorrect:
+                        /*
+                          Microsoft.Identity.Client.MsalClientException
+                          HResult=0x80131500
+                          Message=Only loopback redirect uri is supported, but app://58145b91-0c36-4500-8554-080854f2ac97/ was found. Configure http://localhost or http://localhost:port both during app registration and when you create the PublicClientApplication object. See https://aka.ms/msal-net-os-browser for details
+                          Source=Microsoft.Identity.Client
+                        */
 
                         //Open browser to enter credentials when MFA required
                         result = await app.AcquireTokenInteractive(scopes).ExecuteAsync();

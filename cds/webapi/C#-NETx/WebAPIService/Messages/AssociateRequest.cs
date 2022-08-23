@@ -27,7 +27,7 @@ namespace PowerApps.Samples.Messages
             Content = new StringContent(
                         content: new JObject() 
                         {
-                            { "@odata.id", $"{baseAddress}{entityToAdd.Path}"}
+                           { "@odata.id", $"{baseAddress}{entityToAdd.Path}"}
                         }.ToString(),
                         encoding: Encoding.UTF8,
                         mediaType: "application/json");

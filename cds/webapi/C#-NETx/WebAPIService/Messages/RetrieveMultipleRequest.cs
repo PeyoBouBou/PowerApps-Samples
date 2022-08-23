@@ -14,6 +14,7 @@ namespace PowerApps.Samples.Messages
             - simple entity collections, such as 'accounts'
             - collection valued navigation properties, such as 'accounts(guid)/Account_Tasks'
             - Full Urls, such as those in the NextLink property.
+            - Metadata resources such as EntityDefinitions
         */
 
 

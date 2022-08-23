@@ -18,7 +18,6 @@ namespace PowerApps.Samples.Messages
         {
             get
             { 
-
                 return JObject.Parse(Content.ReadAsStringAsync().GetAwaiter().GetResult());
             }
         }
